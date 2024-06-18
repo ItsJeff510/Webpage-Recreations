@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    background-color: #212121;
+}
+
+main {
+    margin: 20px;
+}
+
+.navbar {
+    background-color: #212121;
+    overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar .app a:hover {
+    background-color: white;
+}
+
+.navbar-right {
+  float: right;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
