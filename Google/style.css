@@ -8,17 +8,44 @@ main {
 }
 
 .navbar {
+    display: flex;
     background-color: #212121;
     overflow: hidden;
+    padding: 6px;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  align-self: center;
+  justify-content: left;
+  padding-left: 15px;
+  height: 100%;
+}
+
+.navbar-right {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px 7px;
+  gap: 5px;
 }
 
 .navbar a {
-  float: left;
   color: #fff;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 5px;
+  margin: 0px 5px;
   text-decoration: none;
   font-size: 17px;
+  align-content: center;
 }
 
 .navbar a:hover {
@@ -29,8 +56,16 @@ main {
     background-color: white;
 }
 
-.navbar-right {
-  float: right;
+.navbar .app a{
+  height: 40px;
+}
+
+.user {
+  display: flex;
+}
+
+.user img {
+  border-radius: 50%;
 }
 
 h1 {
