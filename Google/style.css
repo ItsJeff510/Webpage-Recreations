@@ -72,18 +72,207 @@ main {
   border-radius: 50%;
 }
 
-main img {
+.logo img {
   display: block;
+  padding-top: 110px;
   margin-left: auto;
   margin-right: auto;
   width: auto;
 }
-.logo {
-  padding-top: 92px;
-}
 
 .searchbar {
+  display: flex;
+  min-height: 44px;
+  max-width: 584px;
+  box-shadow: none;
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  width: auto;
+  padding: 20px;
+}
+
+.searchcontainer {
+  flex: 1;
+  display: flex;
+  padding: 0 8px 0 0;
+  border: 1px solid #5f6368;
+  border-radius: 24px;
+}
+
+.searchcontainer:active {
+  background-color: #303134;
+}
+
+.searchicon {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  padding-left: 14px;
+  height: 46px;
+}
+
+.textbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  line-height: 22px;
+  border-bottom: 8px solid transparent;
+  padding-top: 13px;
+}
+
+.textbar textarea {
+  
+  color: white;
+  font-size: 16px;
+  overflow-x: hidden;
+  white-space: pre-line;
+  overflow-y: auto;
+  resize: none;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+}
+
+.righticons {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: stretch;
+  flex-direction: row;
+  height: 44px;
+  align-items: center;
+}
+
+.mic-lens {
+  flex: 1 0 auto;
+  padding: 0 4px;
+  border: 0;
+}
+
+.searchbuttons {
+  display: block;
+  align-content: center;
+  text-align: center;
+}
+
+.googlesearch {
+  background-color: #303134;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  color: #e8eaed;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  width: 96px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.googlesearch:hover {
+  border: 1px solid #5f6368;
+}
+
+.lucky {
+  background-color: #303134;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  color: #e8eaed;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  width: 110px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.lucky:hover {
+  border: 1px solid #5f6368;
+}
+
+.footercontainer {
   width: 100%;
-  height: 100px;
-  border: solid white;
+  background-color: #171717;
+  display: block;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  font-size: 14px;
+}
+
+.footbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.leftfoot {
+  justify-content: flex-start;
+  min-width: 30%;
+  order: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.leftfoot a {
+  color: white;
+  display: block;
+  padding: 15px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.centerfoot {
+  order: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.centerfoot a {
+  color: white;
+  display: block;
+  padding: 15px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.centerfoot img {
+  height: 14px;
+  margin-right: 6px;
+  overflow: clip;
+}
+
+.centerfoot span {
+  white-space: nowrap;
+  vertical-align: top;
+  color: white;
+}
+
+.rightfoot {
+  justify-content: flex-end;
+  min-width: 30%;
+  order: 3;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rightfoot a {
+  color: white;
+  display: block;
+  padding: 15px;
+  white-space: nowrap;
+  text-decoration: none;
 }
