@@ -4,7 +4,7 @@
 
 body {
     margin: 0px;
-    background-color: #212121;
+    background-color: #202124;
 }
 
 main {
@@ -14,12 +14,13 @@ main {
 .navbar {
     display: flex;
     background-color: #212121;
+    height: 60px;
     overflow: hidden;
     padding: 6px;
     align-items: center;
-    height: 60px;
     justify-content: space-between;
     font-size: small;
+    line-height: 24px;
 }
 
 .navbar-left {
@@ -27,14 +28,12 @@ main {
   align-self: center;
   justify-content: left;
   padding-left: 15px;
-  height: 100%;
 }
 
 .navbar-right {
   display: flex;
   align-self: center;
   justify-content: flex-end;
-  height: 100%;
 }
 
 .icons {
@@ -60,9 +59,9 @@ main {
     background-color: white;
 }
 
-.navbar .app a{
+/* .navbar .app a{
   height: 40px;
-}
+} */
 
 .user {
   display: flex;
