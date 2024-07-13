@@ -43,6 +43,11 @@ main {
   gap: 5px;
 }
 
+.icons a:hover {
+  background-color: #303134;
+  border-radius: 50%;
+}
+
 .navbar a {
   color: #fff;
   padding: 5px;
@@ -58,10 +63,6 @@ main {
 .navbar .app a:hover {
     background-color: white;
 }
-
-/* .navbar .app a{
-  height: 40px;
-} */
 
 .user {
   display: flex;
